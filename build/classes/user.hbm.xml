@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.snap.beans.UserBean" table="user" dynamic-insert="true" dynamic-update="true">
+		<id name="email" column="email">
+			<generator class="assigned"/>
+		</id>
+		<property name="name" column="name" length="20" not-null="true"/>
+		<property name="password" column="password" length="20"/>
+		<property name="address" column="address" length="20"/>
+		<property name="mobile" column="mobile" length ="10" />
+		
+	</class>
+   
+</hibernate-mapping>
+
+
+
+
+
+
+
+
+

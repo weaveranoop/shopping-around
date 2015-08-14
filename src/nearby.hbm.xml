@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.snap.beans.NearbyBean" table="nearby" dynamic-insert="true" dynamic-update="true">
+		<composite-id name="key" class="com.snap.beans.NearbyKey">
+			<key-property name="sector" type="int"></key-property>
+			<key-property name="nearby_sector" type="int"></key-property>
+			
+		</composite-id>
+		
+ 		
+	</class>
+   
+</hibernate-mapping>
+
+
+
+
+
+
+
+
+

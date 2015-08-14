@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.snap.beans.CatalogTableBean" table="catalogtable" dynamic-insert="true" dynamic-update="true">
+		<id name="product_id" column="product_id"  type="int">
+			<generator class="assigned"/>
+		</id>
+		<property name="product_name" column="product_name" not-null="true" length="50"/>
+		<property name="shop_id" column="shop_id" not-null="true" type="int"/>
+		<property name="price" column="price" not-null="true" type ="double" />
+		<property name ="details" column ="details" not-null="true" length="100"/>
+		
+	</class>
+   
+</hibernate-mapping>
+
+
+
+
+
+
+
+
+
